@@ -1,27 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>... Document ...</title>
+    <meta name="author" content="Juan Patron">
+    <meta name="keywords" content="programacion, desarrollo web, web, web semantica, programacion web">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
 <body>
     
     <style>
         
         .btn-search{
-            
             font-weight: 400;
             letter-spacing: 1px;
         }
+
+        .main-title{
+            font-size: 44px;
+            font-weight: 200;
+            text-align: center;
+            margin: 2% 0;
+        }
     
         .main-article {
-            width: 100%;
+            width: 80%;
             height:auto;
+            border: 1px solid green;
+            margin: 2% auto;
+            background-color: #292b2c;
+            color: white;
         }
 
+        .type-text {
+          font-weight: 100;
+        }
+
+        .second-title {
+          text-align: center;
+          margin:2% 0;
+          font-size: 30px;
+        }
+
+        .parragraph{
+          margin:3% 0;
+          display: inline-block;
+        }
+
+        h5 {
+          margin-top: 5%;
+          text-align: center;
+        }
+
+        .title-post:hover{
+          color: red ;
+          text-decoration: none;
+        }
+
+        i{
+          margin-left: 3px;
+          font-size: 34px;
+        }
+
+        .title-post {
+          text-decoration: none;
+          color: white;
+          font-weight: 100;
+          font-size: 22px;
+        }
+
+        .btn-info{
+          border-radius: 0;
+        }
+
+      .bg-black{
+        background-color: #292b2c;
+      }
+      .col-md-12{
+        padding-bottom: 5%;
+      }
+
+      .main-card{
+        margin-top: 3%;
+      }
+
+      .card{
+        border-radius: 0;
+        margin-top: 2%;
+      }
+
+      .footer{
+        padding: 2%;
+      }
+
+      .fa-footer{
+        font-size: 48px;
+        margin-left: 2%;
+      }
+
+      .fa-instagram:hover{
+        color: #5bc0de ;
+      }
+      
+      .fa-facebook-f{
+        padding-right: 3%;
+        border-right: 1px solid white;
+      }
+      .fa-facebook-f:hover {
+          color:  #5bc0de;
+      }
+
+      hr{
+        background-color: white;
+        margin-bottom: 4%;
+      }
     </style>
 
 <header>
@@ -47,29 +142,101 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control txt-search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-warning my-2 my-sm-0 btn-search" type="submit">Search</button>
+            <button class="btn btn-outline-info my-2 my-sm-0 btn-search" type="submit">Search</button>
           </form>
         </div>
       </nav>
 
 </header>
 
-<section class="container-fluid" >
+<section class="container-fluid">
 
-    <h1> Welcome to... </h1>
+    <h1 class="main-title"> Welcome to... </h1>
 
     <article class="row">
-        <div class="col-md-10 main-article">
-            <header>
-                <h2> Download our Ebook free </h2>
+      <div class="col-md-10 main-article">
+        <header>
+                <h2 class="second-title type-text" > Download our Ebook free </h2>
             </header>
-            <section>
-                <p>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quos praesentium, vitae odio ea id unde minus architecto ab porro at, necessitatibus, maxime assumenda iure non aliquid temporibus quaerat fuga. </p>
-            </section>
+            <section class="type-text parragraph">
+                <p>  En estè nuevo Ebook te contamos algunos de los pasos que nos han ayudado a mejorar nuestras habilidades en cuanto a la programacion. Y te lo queremos 
+                  compartir de forma gratuita, para que tambien puedas aquirir esas habilidades que tanto quieres y forma parte de nuestra comunidad. 
+                </p>
+                <a class="btn btn-info" href="#Descarga" >Download <i class="fa fa-download"></i> </a>
+              </section>
         </div>
     </article>
 
+    <article class="row">
+      <section class="col-md-12 text-white bg-black type-text">
+      <section class="col-md-12 main-card"> 
+        <div class="row">
+         <div class="myCard" style="width: 30rem;" >
+          <img src="http://lorempixel.com/400/400" class="card-img-top">
+          <h5>  <a href="#" class="title-post" > Titulo de la ultima noticia. </a> </h5>
+          <p class="text-center" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem asperiores, maiores ipsa minima velit soluta
+              excepturi impedit ab error nam veritatis nostrum molestias est explicabo enim molestiae, cum aut.  
+          </p>
+
+          <a class="btn btn-outline btn-info" >  Leer màs. </a>
+         
+        </div>
+        </div>  
+      </section>
+
+          <div class="row">
+
+          <div class="card ml-4 mr-1 bg-dark text-white" style="width: 19rem;">
+            <img src="http://lorempixel.com/400/400" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info btn-block"> Leer el post </a>
+            </div>
+          </div>
+        
+          <div class="card ml-4 mr-1 bg-dark text-white" style="width: 19rem;">
+            <img src="http://lorempixel.com/400/400" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info btn-block"> Leer el post </a>
+            </div>
+          </div>
+        
+          <div class="card ml-4 mr-1 bg-dark text-white" style="width: 19rem;">
+            <img src="http://lorempixel.com/400/400" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info btn-block"> Leer el post </a>
+            </div>
+          </div>
+        
+          <div class="card ml-4 mr-1 bg-dark text-white" style="width: 19rem;">
+            <img src="http://lorempixel.com/400/400" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info btn-block"> Leer el post </a>
+            </div>
+          </div>
+        
+
+        </div>
+        </section>
+    </article>
 </section>
+
+<footer class="bg-black text-white footer" >
+  
+  <div class="social-media">
+    <hr>
+    <i class="fa fa-footer fa-instagram"></i>
+    <i class="fa fa-footer fa-facebook-f"></i>
+  </div>
+
+</footer>
 
 
 </body>
